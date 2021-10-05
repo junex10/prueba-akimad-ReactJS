@@ -8,6 +8,8 @@ import { gitHubInstance } from '../../helpers/utility';
 import { withRouter } from "react-router";
 import DataTable from 'react-data-table-component';
 
+import Spinner from '../shared/spinner/Spinner';
+
 import moment from 'moment';
 
 class GetRepositoryUser extends Component {
@@ -57,7 +59,7 @@ class GetRepositoryUser extends Component {
                                 }
                                 else if(isLoading) {
                                     return (
-                                        <h1>Cargando...</h1>
+                                        <Spinner />
                                     )
                                 }
                                 else if (resp !== null) {

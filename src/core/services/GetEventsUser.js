@@ -10,6 +10,8 @@ import DataTable from 'react-data-table-component';
 
 import moment from 'moment';
 
+import Spinner from '../shared/spinner/Spinner';
+
 class GetEventsUser extends Component {
     constructor(props){
         super(props)
@@ -51,7 +53,7 @@ class GetEventsUser extends Component {
                                 }
                                 else if(isLoading) {
                                     return (
-                                        <h1>Cargando...</h1>
+                                        <Spinner />
                                     )
                                 }
                                 else if (resp !== null) {

@@ -8,6 +8,8 @@ import { gitHubInstance } from '../../helpers/utility';
 
 import { withRouter } from "react-router";
 
+import Spinner from '../shared/spinner/Spinner';
+
 class GetUsers extends Component {
     constructor(props) {
         super(props);
@@ -44,9 +46,9 @@ class GetUsers extends Component {
                                 if (error) {
                                     return <h1> Error </h1>
                                 }
-                                else if(isLoading) {
+                                else if (isLoading) {
                                     return (
-                                        <h1>Cargando...</h1>
+                                        <Spinner type='all' />
                                     )
                                 }
                                 else if (resp !== null) {
