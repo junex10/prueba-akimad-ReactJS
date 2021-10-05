@@ -1,0 +1,6 @@
+.backgroundLogin{
+    position: absolute;
+    background-color: var(--azul);
+    height: 100% !important;
+    overflow-x: hidden;
+}
