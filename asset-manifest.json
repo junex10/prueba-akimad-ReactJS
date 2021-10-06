@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/prueba-akimad-ReactJS/static/css/main.856a9b89.chunk.css",
-    "main.js": "/prueba-akimad-ReactJS/static/js/main.8c170c41.chunk.js",
-    "main.js.map": "/prueba-akimad-ReactJS/static/js/main.8c170c41.chunk.js.map",
+    "main.js": "/prueba-akimad-ReactJS/static/js/main.b9b5ab83.chunk.js",
+    "main.js.map": "/prueba-akimad-ReactJS/static/js/main.b9b5ab83.chunk.js.map",
     "runtime-main.js": "/prueba-akimad-ReactJS/static/js/runtime-main.55637558.js",
     "runtime-main.js.map": "/prueba-akimad-ReactJS/static/js/runtime-main.55637558.js.map",
-    "static/js/2.5bc319b5.chunk.js": "/prueba-akimad-ReactJS/static/js/2.5bc319b5.chunk.js",
-    "static/js/2.5bc319b5.chunk.js.map": "/prueba-akimad-ReactJS/static/js/2.5bc319b5.chunk.js.map",
+    "static/js/2.e185cd19.chunk.js": "/prueba-akimad-ReactJS/static/js/2.e185cd19.chunk.js",
+    "static/js/2.e185cd19.chunk.js.map": "/prueba-akimad-ReactJS/static/js/2.e185cd19.chunk.js.map",
     "static/js/3.97172e34.chunk.js": "/prueba-akimad-ReactJS/static/js/3.97172e34.chunk.js",
     "static/js/3.97172e34.chunk.js.map": "/prueba-akimad-ReactJS/static/js/3.97172e34.chunk.js.map",
     "index.html": "/prueba-akimad-ReactJS/index.html",
     "static/css/main.856a9b89.chunk.css.map": "/prueba-akimad-ReactJS/static/css/main.856a9b89.chunk.css.map",
-    "static/js/2.5bc319b5.chunk.js.LICENSE.txt": "/prueba-akimad-ReactJS/static/js/2.5bc319b5.chunk.js.LICENSE.txt",
+    "static/js/2.e185cd19.chunk.js.LICENSE.txt": "/prueba-akimad-ReactJS/static/js/2.e185cd19.chunk.js.LICENSE.txt",
     "static/media/undraw_profile.28817a9a.svg": "/prueba-akimad-ReactJS/static/media/undraw_profile.28817a9a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.55637558.js",
-    "static/js/2.5bc319b5.chunk.js",
+    "static/js/2.e185cd19.chunk.js",
     "static/css/main.856a9b89.chunk.css",
-    "static/js/main.8c170c41.chunk.js"
+    "static/js/main.b9b5ab83.chunk.js"
   ]
 }
