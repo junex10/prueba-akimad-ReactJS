@@ -18,20 +18,16 @@ class GetEventsUser extends Component {
         this.login = props.userName;
         this.columns = [
             {
+                name: 'Avatar',
+                selector: row => row.avatar
+            },
+            {
                 name: 'Evento',
                 selector: row => row.evento
             },
             {
                 name: 'Tipo',
                 selector: row => row.type
-            },
-            {
-                name: 'Avatar',
-                selector: row => row.avatar
-            },
-            {
-                name: 'Repositorio',
-                selector: row => row.repository
             },
             {
                 name: 'Fecha de creación',
@@ -65,7 +61,6 @@ class GetEventsUser extends Component {
                                                 evento: val.actor.login,
                                                 type: val.type,
                                                 avatar: <img width='50' className='mt-4 mb-4' src={val.actor.avatar_url} alt={`evento_${val.actor.avatar_url}`} />,
-                                                repository: <a target='_blank' rel='noreferrer' href={val.repo.url}>{val.repo.url}</a>,
                                                 created: moment(val.created_at).format('DD/MM/YYYY hh:mm A')
                                             }
                                         );

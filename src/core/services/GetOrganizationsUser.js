@@ -27,10 +27,6 @@ class GetOrganizationsUser extends Component {
             {
                 name: 'Avatar',
                 selector: row => row.avatar
-            },
-            {
-                name: 'Link',
-                selector: row => row.url
             }
         ];
     }
@@ -59,7 +55,6 @@ class GetOrganizationsUser extends Component {
                                             {
                                                 organization: val.login,
                                                 avatar: <img width='50' className='mt-4 mb-4' src={val.avatar_url} alt={`usuario_${val.avatar_url}`} />,
-                                                url: <a target='_blank' rel='noreferrer' href={val.url}>{val.url}</a>,
                                                 description: (val.description === '') ? 'Sin descripción' : val.description
                                             }
                                         );
