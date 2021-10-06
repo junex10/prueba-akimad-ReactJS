@@ -3,6 +3,7 @@ import { withRouter } from "react-router";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import UserInfoGit from './users/UserInfoGit';
+import FoundedUser from "./users/FoundedUser";
 
 import Users from "./users/Users";
 import Navbar from './../../shared/navbar/Navbar';
@@ -41,6 +42,19 @@ class Dashboard extends Component {
                                     <div id="content">
                                         <Navbar />
                                         <UserInfoGit />
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    }} />
+                    <Route path='/dashboard/searchUser/:user' render={() => {
+                        return (
+                            <div id='wrapper'>
+                                <SideBar />
+                                <div id="content-wrapper" className="d-flex flex-column">
+                                    <div id="content">
+                                        <Navbar />
+                                        <FoundedUser />
                                     </div>
                                 </div>
                             </div>

@@ -31,10 +31,48 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --github: #171515;
 }
-
 .badge-primary {
     background: var(--azul) !important;
 }
-.bg-gradient-primary{
+
+.bg-gradient-primary {
     background: var(--github) !important;
+}
+
+.fetchResults {
+    position: absolute;
+    top: 100%;
+    width: 380px;
+    z-index: 1;
+    background: white !important;
+    padding: 20px;
+    border-radius: 3px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.fetchResults div p{
+    max-width: 100% !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#sidebarToggleTop {
+    display: none !important;
+}
+
+@media screen and (max-width: 575px) {
+    .navbar-search {
+        display: block !important;
+    }
+    .fetchResults {
+        width: 300px !important;
+    }
+}
+
+@media screen and (max-width: 439px) {
+    .fetchResults {
+        width: 200px !important;
+    }
 }

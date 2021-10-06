@@ -34,6 +34,7 @@ class GetUser extends Component {
                                 }
                                 else if (resp !== null) {
                                     const data = resp.data.items[0];
+                                    console.log(data);
                                     return (
                                         <div className='row'>
                                             <div className='col-12 mb-4'>

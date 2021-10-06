@@ -5,6 +5,7 @@ import GetUser from './GetUser';
 import GetRepositoryUser from './GetRepositoryUser';
 import GetOrganizationsUser from './GetOrganizationsUser';
 import GetEventsUser from './GetEventsUser';
+import FetchUser from './FetchUsers';
 
 class Github extends Component {
     constructor(props) {
@@ -19,6 +20,7 @@ class Github extends Component {
         if (this.api === 'repositoryUser') return (<GetRepositoryUser userName={this.userName}/>)
         if (this.api === 'organizationsUser') return (<GetOrganizationsUser userName={this.userName}/>)
         if (this.api === 'eventsUser') return (<GetEventsUser userName={this.userName} />)
+        if (this.api === 'fetchUser') return (<FetchUser userName={this.userName}/>)
     }
 }
 export default Github;
