@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Redirect } from 'react-router';
 
 import Login from './core/pages/login/Login';
 import Dashboard from './core/pages/dashboard/Dashboard';
@@ -10,7 +11,10 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact path='/' component={Login} />
+          <Route exact path='/' render={() => 
+            <Redirect to='/login' />
+          } />
+          <Route exact path='/login' component={Login} />
           <Route path='/dashboard' component={ Dashboard } />
         </Switch>
       </BrowserRouter>

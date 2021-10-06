@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 
+import { withRouter } from 'react-router';
+
 import './../../../css/login.css';
 
 class Login extends Component {
@@ -79,4 +81,4 @@ class Login extends Component {
         );
     }
 }
-export default Login;
+export default withRouter(Login);

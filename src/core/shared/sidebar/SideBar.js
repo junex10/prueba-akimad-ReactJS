@@ -26,18 +26,18 @@ class SideBar extends Component {
                 </div>
 
                 <li className="nav-item">
-                    <p className="nav-link collapsed active">
-                        <i className="fas fa-user"></i>
-                        <span>Usuarios</span>
-                    </p>
-                </li>
-                <li className="nav-item">
-                    <Link to='/' onClick={() => dropSession()}>
+                    <Link to='/dashboard/users'>
                         <p className="nav-link collapsed active">
                             <i className="fas fa-user"></i>
-                            <span>Log out</span>
+                            <span>Usuarios</span>
                         </p>
                     </Link>
+                </li>
+                <li className="nav-item">
+                    <p className="nav-link collapsed active" onClick={() => {dropSession(); window.location.href = '/login'}}>
+                        <i className="fas fa-user"></i>
+                        <span>Log out</span>
+                    </p>
                 </li>
             </ul>
         );
